@@ -60,12 +60,10 @@ class EditProfileForm(FlaskForm):
     # TODO: url validator
     image_url = StringField(
         '(Optional) Image URL',
-        validators=[URL()],
     )
 
     header_image_url = StringField(
         '(Optional) Header Image URL',
-        validators=[URL()],
     )
 
     bio = TextAreaField(
